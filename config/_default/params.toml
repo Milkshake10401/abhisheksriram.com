@@ -1,13 +1,25 @@
-colorScheme = "autumn"
+colorScheme = "noir"
 defaultAppearance = "dark"
 autoSwitchAppearance = false
+mainSections = ["posts", "projects"]
+customCSS = ["css/custom.css"]
 
 [homepage]
 layout = "hero"
-homepageImage = "img/headshot.jpg"
+homepageImage = "img/hero-bg.jpg"
 disableHeroImageFilter = false
+showRecent = true
+showRecentItems = 3
+cardView = true
+cardViewScreenWidth = false
 
 [author]
 name = "Abhishek Sriram"
 headline = "Chief of Staff · Technical Operator"
 image = "img/headshot.jpg"
+links = [
+  { linkedin = "https://www.linkedin.com/in/abhishek-sriram-aaa6a0168/" },
+  { x-twitter = "https://x.com/Milkshake1040" },
+  { github = "https://github.com/Milkshake10401" },
+  { email = "mailto:connect@abhisheksriram.com" }
+]
