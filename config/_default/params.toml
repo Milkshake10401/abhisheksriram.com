@@ -1,0 +1,13 @@
+colorScheme = "autumn"
+defaultAppearance = "dark"
+autoSwitchAppearance = false
+
+[homepage]
+layout = "hero"
+homepageImage = "img/headshot.jpg"
+disableHeroImageFilter = false
+
+[author]
+name = "Abhishek Sriram"
+headline = "Chief of Staff · Technical Operator"
+image = "img/headshot.jpg"

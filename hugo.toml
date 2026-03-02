@@ -2,3 +2,49 @@ baseURL = "https://abhisheksriram.com/"
 languageCode = "en-us"
 title = "Abhishek Sriram"
 theme = "blowfish"
+
+# Basics
+[pagination]
+  pagerSize = 10
+
+enableRobotsTXT = true
+
+# Blowfish features (search needs JSON output)
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+# Pretty URLs
+[permalinks]
+  posts = "/writing/:slug/"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 5
+
+  [[menu.main]]
+    name = "Work"
+    pageRef = "experience"
+    weight = 10
+
+  [[menu.main]]
+    name = "Projects"
+    pageRef = "projects"
+    weight = 20
+
+  [[menu.main]]
+    name = "Writing"
+    pageRef = "posts"
+    url = "/writing/"
+    weight = 30
+
+  [[menu.main]]
+    name = "Contact"
+    pageRef = "contact"
+    weight = 40
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
